@@ -109,6 +109,7 @@ export default function Home() {
           />
           Go to nextjs.org →
         </a>
+        <button onClick={() => { throw new Error('Test error') }}>Trigger an error</button>
       </footer>
     </div>
   );

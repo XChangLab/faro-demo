@@ -5,8 +5,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
+  generateBuildId: () => '7d9b94b5-ac1d-44b7-89d6-2188ed4083d9',
+  crossOrigin: 'anonymous',
   webpack: (config) => {
-    console.log('ccc', config)
     config.plugins.push(
       new FaroSourceMapUploaderPlugin({
         appName: 'auth-ui',
@@ -18,7 +19,15 @@ const nextConfig: NextConfig = {
         // https://grafana.com/docs/grafana-cloud/monitor-applications/frontend-observability/sourcemap-upload-plugins/#obtain-an-api-key
         apiKey: process.env.FARO_API_KEY || '',
         gzipContents: true,
-        outputPath: '.next',
+        outputPath: './.next/static/chunks',
+        // outputFiles: [
+        //   './.next/static/chunks/*.js.map',
+        //   './.next/static/chunks/pages/*.js.map',
+        // ],
+        bundleId: '7d9b94b5-ac1d-44b7-89d6-2188ed4083d9',
+        verbose: true,
+        keepSourcemaps: true,
+        recursive: true,
       })
     )
 
