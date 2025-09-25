@@ -36,7 +36,7 @@
     "remotePatterns": [
       {
         "protocol": "https",
-        "hostname": "^(?:^(?:cdn\\.jsdelivr\\.net)$)$",
+        "hostname": "^(?:^(?:jeff\\-static\\.oss\\-cn\\-hangzhou\\.aliyuncs\\.com)$)$",
         "port": "",
         "pathname": "^(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$))(?:(?:(?!(?:^|\\/)\\.{1,2}(?:\\/|$)).)*?)\\/?)$"
       }

@@ -12,7 +12,7 @@
     "typedRoutes": false,
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "https://cdn.jsdelivr.net/gh/XChangLab/faro-demo@main",
+    "assetPrefix": "https://jeff-static.oss-cn-hangzhou.aliyuncs.com",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -60,7 +60,7 @@
       "contentDispositionType": "attachment",
       "remotePatterns": [
         {
-          "hostname": "cdn.jsdelivr.net",
+          "hostname": "jeff-static.oss-cn-hangzhou.aliyuncs.com",
           "protocol": "https",
           "port": ""
         }
