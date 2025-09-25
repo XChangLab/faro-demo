@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
   generateBuildId: () => '7d9b94b5-ac1d-44b7-89d6-2188ed4083d9',
   crossOrigin: 'anonymous',
-  assetPrefix: 'https://cdn.statically.io/gh/XChangLab/faro-demo/main',
+  assetPrefix: 'https://cdn.jsdelivr.net/gh/XChangLab/faro-demo@main',
   webpack: (config, { isServer }) => {
     // Only apply the plugin on the client side build
     if (!isServer) {

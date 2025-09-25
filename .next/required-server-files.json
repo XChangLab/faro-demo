@@ -12,7 +12,7 @@
     "typedRoutes": false,
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "https://cdn.statically.io/gh/XChangLab/faro-demo/main",
+    "assetPrefix": "https://cdn.jsdelivr.net/gh/XChangLab/faro-demo@main",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -60,7 +60,7 @@
       "contentDispositionType": "attachment",
       "remotePatterns": [
         {
-          "hostname": "cdn.statically.io",
+          "hostname": "cdn.jsdelivr.net",
           "protocol": "https",
           "port": ""
         }
